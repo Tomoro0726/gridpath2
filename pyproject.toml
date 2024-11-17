@@ -1,0 +1,8 @@
+[tool.poetry]
+name = "mesh"
+version = "0.1.0"
+description = "Test"
+authors = ["Tomoro0726"]
+license = "MIT"
+readme = "README.md"
+repository = "repository URL"
