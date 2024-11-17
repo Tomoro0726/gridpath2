@@ -17,7 +17,6 @@ def grid(x1, y1, x2, y2):
     grid_list = [[x1_grid, y1_grid]]
     intersect_point = [[x1, y1]]
     
-    print(x2_grid, y2_grid)
 
     # 同一点の場合は早期リターン
     if x1_grid == x2_grid and y1_grid == y2_grid:
@@ -73,12 +72,10 @@ def grid(x1, y1, x2, y2):
         
         #終了条件
         if current[0] == x2_grid and current[1] == y2_grid:
-            print("Goal reached")
             return {"grid": grid_list, "intersect": intersect_point, }
         if (current == [x2_grid-1, y2_grid -1] or
             current == [x2_grid, y2_grid - 1] or
             current == [x2_grid - 1, y2_grid]):
-            print("Goal reached")
             return {"grid": grid_list, "intersect": intersect_point, }
 
         # 傾きの方向と位置に基づいて次のポイントを計算
