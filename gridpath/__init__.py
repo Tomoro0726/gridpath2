@@ -1,1 +1,0 @@
-from gridpath.gridpath2 import grid
