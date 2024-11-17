@@ -1,4 +1,4 @@
-# GridPath
+# gridpath2
 
 GridPath is a Python library for calculating grid-based paths and intersection points between two coordinates. It's particularly useful for applications requiring precise path tracking on a grid system, such as robotics, game development, or computer graphics.
 
@@ -13,7 +13,7 @@ GridPath is a Python library for calculating grid-based paths and intersection p
 ## Installation
 
 ```bash
-pip install gridpath
+pip install gridpath2
 ```
 
 ## Usage
@@ -21,7 +21,7 @@ pip install gridpath
 Basic usage example:
 
 ```python
-from gridpath import grid
+from gridpath2 import grid
 
 # Calculate path between two points
 result = grid(x1=1.5, y1=2.3, x2=4.7, y2=6.8)
