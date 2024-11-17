@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "gridpath"
-version = "0.1.2"
+version = "0.1"
 description = "Test"
 authors = ["Tomoro0726"]
 license = "MIT"
