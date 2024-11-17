@@ -1,14 +1,15 @@
 
 def grid(x1, y1, x2, y2):
-    """2点間のグリッドパスと各点の通過時間を計算する関数
+    """Calculate grid path and intersection points between two coordinates.
 
-    引数:
-        x1, y1: 開始点の座標
-        x2, y2: 終了点の座標
+    Args:
+        x1, y1: Starting point coordinates
+        x2, y2: Ending point coordinates
 
-    戻り値:
-        grid_list: グリッドポイントのリスト
-        intersect_point: 各グリッドポイントでの通過点のリスト
+    Returns:
+        dict: Dictionary containing:
+            - "grid": List of grid points [[x1, y1], [x2, y2], ...]
+            - "intersect": List of intersection points [[x1, y1], [x2, y2], ...]
     """
 
     # グリッドポイントとパスの初期化
