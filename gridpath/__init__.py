@@ -1,1 +1,1 @@
-from gridpath.gridpath import *
+from gridpath.gridpath2 import grid
