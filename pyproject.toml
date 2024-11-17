@@ -1,6 +1,6 @@
 [tool.poetry]
-name = "mesh"
-version = "0.1.1"
+name = "gridpath"
+version = "0.1.2"
 description = "Test"
 authors = ["Tomoro0726"]
 license = "MIT"
