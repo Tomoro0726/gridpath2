@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "gridpath2"
-version = "0.1.3"
+version = "0.1.4"
 description = "GridPath is a Python library for calculating grid-based paths and intersection points between two coordinates. It's particularly useful for applications requiring precise path tracking on a grid system, such as robotics, game development, or computer graphics."
 authors = ["Tomoro0726"]
 license = "MIT"
