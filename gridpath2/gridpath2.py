@@ -1,18 +1,15 @@
 def grid(x1: float, y1: float, x2: float, y2: float) -> dict:
-    """2点間のグリッドパスと交点を計算する関数
+    """Calculate grid path and intersection points between two coordinates.
 
     Args:
-        x1, y1: 開始点の座標
-        x2, y2: 終了点の座標
+        x1, y1: Starting point coordinates
+        x2, y2: Ending point coordinates
 
     Returns:
-        dict: {
-            "grid": グリッドポイントのリスト [[x, y], ...],
-            "intersect": 交点のリスト [[x, y], ...],
-            "timeout": タイムアウト状態 (bool)
-        }
+        dict: Dictionary containing:
+            - "grid": List of grid points [[x1, y1], [x2, y2], ...]
+            - "intersect": List of intersection points [[x1, y1], [x2, y2], ...]
     """
-    MAX_ITERATIONS = 1000
 
     # グリッドポイントの初期化
     # グリッドポイントとパスの初期化
@@ -82,7 +79,7 @@ def grid(x1: float, y1: float, x2: float, y2: float) -> dict:
     if y2==y2_grid:
         end_y.append(y2_grid-1)
     
-    for iteration in range(MAX_ITERATIONS):
+    while True:
         current = grid_list[-1]
         
         # 終了条件
@@ -129,7 +126,3 @@ def grid(x1: float, y1: float, x2: float, y2: float) -> dict:
 
         intersect_points.append(next_intersect)
         grid_list.append(next_point)
-
-    # タイムアウトの場合
-    print("Timeout")
-    return {"grid": grid_list, "intersect": intersect_points, "timeout": True}
